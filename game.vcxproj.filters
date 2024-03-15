@@ -99,26 +99,319 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="resources\Toolbar.bmp">
+    <Image Include="Resources\Toolbar.bmp">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="resources\game.ico">
+    <Image Include="Resources\game.ico">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="resources\gameDoc.ico">
+    <Image Include="Resources\gameDoc.ico">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="resources\icon1.ico">
+    <Image Include="Resources\icon1.ico">
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="Resources\Game Framework.png" />
     <Image Include="Resources\GAME_FRAMEWORK.ico">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="resources\bitmap1.bmp">
+    <Image Include="Resources\bitmap1.bmp">
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="Resources\GAME_FRAMEWORK.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\BNB.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\icon32.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\icon256.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+
+
+    <Image Include="Resources\item\bmp\bomb.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\item\bmp\bomb2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\item\bmp\bomb3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\item\bmp\needle.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\item\bmp\props_1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\item\bmp\props_2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\item\bmp\props_3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\item\bmp\null.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+
+
+    <Image Include="Resources\map1\bmp\map1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map1\bmp\blocks_r.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map1\bmp\blocks_y.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map1\bmp\grass.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map1\bmp\house_b.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map1\bmp\house_r.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map1\bmp\house_y.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map1\bmp\tree.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map1\bmp\wooden_box.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+
+
+    <Image Include="Resources\map2\bmp\map2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map2\bmp\cactus.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map2\bmp\earth.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map2\bmp\green_box.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map2\bmp\green_box2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map2\bmp\rock.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map2\bmp\tent_b.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map2\bmp\tent_r.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map2\bmp\tent_y.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+
+
+    <Image Include="Resources\map3\bmp\basket_trans.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map3\bmp\flower_trans.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map3\bmp\grassBlock_trans.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map3\bmp\map3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map3\bmp\pool_LB_trans.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map3\bmp\pool_LU_trans.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map3\bmp\pool_MB_trans.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map3\bmp\pool_MU_trans.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map3\bmp\pool_RB_trans.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map3\bmp\pool_RU_trans.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map3\bmp\tree_trans.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+
+
+    <Image Include="Resources\map4\bmp\box.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map4\bmp\map4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map4\bmp\rock1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map4\bmp\rock2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map4\bmp\stone.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map4\bmp\cross_trans_B.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map4\bmp\cross_trans_L.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map4\bmp\cross_trans_R.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map4\bmp\iron1_trans_B.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map4\bmp\iron2_trans_B.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map4\bmp\lamb_trans_B.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+
+
+    <Image Include="Resources\map5\bmp\map5.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map5\bmp\block.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map5\bmp\block2_trans.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map5\bmp\bottle_B.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map5\bmp\bottle_d.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map5\bmp\bottle_u.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map5\bmp\box_b.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map5\bmp\box_d.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\map5\bmp\triangle_trans.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+
+
+    <Image Include="Resources\pages\center.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\pages\continue.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\pages\corner.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\pages\game_end1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\pages\game_end2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\pages\home_page.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\pages\loading.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\pages\map_select.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+
+
+    <Image Include="Resources\player\bmp\explode.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\player\bmp\Player1_die1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\player\bmp\Player1_die2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\player\bmp\Player1_down.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\player\bmp\Player1_left.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\player\bmp\Player1_right.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\player\bmp\Player1_up.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+
+
+    <Image Include="Resources\player\bmp\Player2_die1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\player\bmp\Player2_die2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\player\bmp\Player2_down.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\player\bmp\Player2_left.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\player\bmp\Player2_right.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\player\bmp\Player2_up.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+
+    
+    <Image Include="Resources\player\bmp\water_column.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\player\bmp\water_column2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\player\bmp\water_down.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\player\bmp\water_down_end.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\player\bmp\water_left.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\player\bmp\water_left_end.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\player\bmp\water_right.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\player\bmp\water_right_end.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\player\bmp\water_up.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\player\bmp\water_up_end.bmp">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
