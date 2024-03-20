@@ -38,6 +38,30 @@ void CGameStateInit::OnInit()
 	//
 	// 此OnInit動作會接到CGameStaterRun::OnInit()，所以進度還沒到100%
 	//
+
+
+	test1.LoadBitmap("Resources/test/bmp1.bmp", RGB(255, 255, 255));
+	test1.SetTopLeft(0,0);
+	test2.LoadBitmap("Resources/test/bmp2.bmp", RGB(255, 255, 255));
+	test2.SetTopLeft(0,0);
+	test3.LoadBitmap("Resources/test/bmp3.bmp", RGB(255, 255, 255));
+	test3.SetTopLeft(0,0);
+	test4.LoadBitmap("Resources/test/bmp4.bmp", RGB(255, 255, 255));
+	test4.SetTopLeft(0,0);
+	test5.LoadBitmap("Resources/test/bmp5.bmp", RGB(255, 255, 255));
+	test5.SetTopLeft(0,0);
+	test6.LoadBitmap("Resources/test/bmp6.bmp", RGB(255, 255, 255));
+	test6.SetTopLeft(0,0);
+	test7.LoadBitmap("Resources/test/bmp7.bmp", RGB(255, 255, 255));
+	test7.SetTopLeft(0,0);
+
+
+
+
+
+
+
+
 }
 
 void CGameStateInit::OnBeginState()
@@ -57,10 +81,42 @@ void CGameStateInit::OnKeyUp(UINT nChar, UINT nRepCnt, UINT nFlags)
 	if (nChar == KEY_ENTER)
 	{
 		select_mode = 2;
+		
 		//PostMessage(AfxGetMainWnd()->m_hWnd, WM_CLOSE,0,0);	// 關閉遊戲
 	}
 	else if (nChar == KEY_ESC)								// Demo 關閉遊戲的方法
 		PostMessage(AfxGetMainWnd()->m_hWnd, WM_CLOSE,0,0);	// 關閉遊戲
+	
+	else if (nChar == KEY_S)
+	{
+		map_mode = 1;	//按Space進入地圖1
+		GotoGameState(GAME_STATE_RUN);						// 切換至GAME_STATE_RUN
+	}
+	else if (nChar == KEY_D)
+	{
+		map_mode = 2;	//按Enter進入地圖2
+		GotoGameState(GAME_STATE_RUN);						// 切換至GAME_STATE_RUN
+	}
+	else if (nChar == KEY_F)
+	{
+		map_mode = 3;	//按Enter進入地圖3
+		GotoGameState(GAME_STATE_RUN);						// 切換至GAME_STATE_RUN
+	}
+	else if (nChar == KEY_G)
+	{
+		map_mode = 4;	//按Enter進入地圖4
+		GotoGameState(GAME_STATE_RUN);						// 切換至GAME_STATE_RUN
+	}
+	else if (nChar == KEY_H)
+	{
+		map_mode = 5;	//按Enter進入地圖5
+		GotoGameState(GAME_STATE_RUN);						// 切換至GAME_STATE_RUN
+	}
+	else if (nChar == KEY_J)
+	{	
+		select_mode = 1;
+		GotoGameState(GAME_STATE_INIT);						// 切換至GAME_STATE_INIT
+	}
 
 }
 
@@ -77,4 +133,19 @@ void CGameStateInit::OnShow()
 		logo.ShowBitmap();			//貼上背景圖
 	else
 		select_map.ShowBitmap();			//貼上背景圖
+/*
+	if (map_mode == 1)
+		test1.ShowBitmap();			//貼上背景圖
+	else if (map_mode == 2)	
+		test2.ShowBitmap();			//貼上背景圖
+	else if (map_mode == 3)	
+		test3.ShowBitmap();	
+	else if (map_mode == 4)	
+		test4.ShowBitmap();	
+	else if (map_mode == 5)	
+		test5.ShowBitmap();	
+	else if (map_mode == 6)	
+		test6.ShowBitmap();	
+	else if (map_mode == 7)	
+		test7.ShowBitmap();	*/
 }
