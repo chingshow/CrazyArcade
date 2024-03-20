@@ -29,6 +29,9 @@ void CGameStateInit::OnInit()
 	logo.LoadBitmap("Resources/pages/home_page.bmp", RGB(255, 255, 255));
 	//logo.SetTopLeft((SIZE_X - logo.GetWidth())/2, (SIZE_Y- logo.GetTop())/2);
 	logo.SetTopLeft((SIZE_X - logo.GetWidth())/2, SIZE_Y/8);
+	select_map.LoadBitmap("Resources/pages/map_select.bmp", RGB(255, 255, 255));
+	//select_map.SetTopLeft((SIZE_X - select_map.GetWidth())/2, (SIZE_Y- select_map.GetTop())/2);
+	select_map.SetTopLeft((SIZE_X - select_map.GetWidth())/2, SIZE_Y/8);
 	//
 	//Sleep(1000);				// 放慢，以便看清楚進度，實際遊戲請刪除此Sleep
 	//
@@ -61,5 +64,6 @@ void CGameStateInit::OnLButtonDown(UINT nFlags, CPoint point)
 
 void CGameStateInit::OnShow()
 {
+	select_map.ShowBitmap();
 	logo.ShowBitmap();
 }
