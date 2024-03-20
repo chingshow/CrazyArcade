@@ -42,6 +42,15 @@ void CGameStateInit::OnBeginState()
 
 void CGameStateInit::OnKeyUp(UINT nChar, UINT nRepCnt, UINT nFlags)
 {
+	const char KEY_ESC = 0x1B;
+	const char KEY_ENTER = 0x0D;
+	
+	if (nChar == KEY_ENTER)
+	{
+		PostMessage(AfxGetMainWnd()->m_hWnd, WM_CLOSE,0,0);	// 關閉遊戲
+	}
+	else if (nChar == KEY_ESC)								// Demo 關閉遊戲的方法
+		PostMessage(AfxGetMainWnd()->m_hWnd, WM_CLOSE,0,0);	// 關閉遊戲
 
 }
 
