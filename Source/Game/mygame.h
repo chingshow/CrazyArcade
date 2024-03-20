@@ -86,11 +86,11 @@ namespace game_framework {
 		void OnInit();  								// �C������?�ιϧγ]�w
 		void OnKeyDown(UINT, UINT, UINT);
 		void OnKeyUp(UINT, UINT, UINT);
-		void OnLButtonDown(UINT nFlags, CPoint point);  // �B�z�ƹ����ʧ@
+		/*void OnLButtonDown(UINT nFlags, CPoint point);  // �B�z�ƹ����ʧ@
 		void OnLButtonUp(UINT nFlags, CPoint point);	// �B�z�ƹ����ʧ@
 		void OnMouseMove(UINT nFlags, CPoint point);	// �B�z�ƹ����ʧ@ 
 		void OnRButtonDown(UINT nFlags, CPoint point);  // �B�z�ƹ����ʧ@
-		void OnRButtonUp(UINT nFlags, CPoint point);	// �B�z�ƹ����ʧ@
+		void OnRButtonUp(UINT nFlags, CPoint point);	// �B�z�ƹ����ʧ@*/
 	protected:
 		void OnMove();									// ���ʹC������
 		void OnShow();									// ��ܳo�Ӫ��A���C���e��
