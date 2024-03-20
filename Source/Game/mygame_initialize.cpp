@@ -46,9 +46,14 @@ void CGameStateInit::OnBeginState()
 
 void CGameStateInit::OnKeyUp(UINT nChar, UINT nRepCnt, UINT nFlags)
 {
-	const char KEY_ESC = 0x1B;
 	const char KEY_ENTER = 0x0D;
-	
+	const char KEY_ESC = 0x1B;
+	const char KEY_S = 0x53;//S¡‰
+	const char KEY_D = 0x44;//D¡‰
+	const char KEY_F = 0x46;//F¡‰
+	const char KEY_G = 0x47;//G¡‰
+	const char KEY_H = 0x48;//H¡‰
+	const char KEY_J = 0x4A;//J¡‰
 	if (nChar == KEY_ENTER)
 	{
 		select_mode = 2;
