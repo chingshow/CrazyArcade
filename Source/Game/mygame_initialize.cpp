@@ -6,6 +6,7 @@
 #include "../Library/gameutil.h"
 #include "../Library/gamecore.h"
 #include "mygame.h"
+#include "config.h"
 
 using namespace game_framework;
 /////////////////////////////////////////////////////////////////////////////
@@ -26,7 +27,8 @@ void CGameStateInit::OnInit()
 	//
 	// 開始載入資料
 	logo.LoadBitmap("Resources/pages/home_page.bmp", RGB(255, 255, 255));
-	logo.SetTopLeft(0, 0);
+	//logo.SetTopLeft((SIZE_X - logo.GetWidth())/2, (SIZE_Y- logo.GetTop())/2);
+	logo.SetTopLeft((SIZE_X - logo.GetWidth())/2, SIZE_Y/8);
 	//
 	//Sleep(1000);				// 放慢，以便看清楚進度，實際遊戲請刪除此Sleep
 	//
