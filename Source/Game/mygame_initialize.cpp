@@ -26,6 +26,7 @@ void CGameStateInit::OnInit()
 	ShowInitProgress(0, "Start Initialize...");	// 一開始的loading進度為0%
 	//
 	// 開始載入資料
+	select_mode = 1;
 	logo.LoadBitmap("Resources/pages/home_page.bmp", RGB(255, 255, 255));
 	//logo.SetTopLeft((SIZE_X - logo.GetWidth())/2, (SIZE_Y- logo.GetTop())/2);
 	logo.SetTopLeft((SIZE_X - logo.GetWidth())/2, SIZE_Y/8);
@@ -50,7 +51,8 @@ void CGameStateInit::OnKeyUp(UINT nChar, UINT nRepCnt, UINT nFlags)
 	
 	if (nChar == KEY_ENTER)
 	{
-		PostMessage(AfxGetMainWnd()->m_hWnd, WM_CLOSE,0,0);	// 關閉遊戲
+		select_mode = 2;
+		//PostMessage(AfxGetMainWnd()->m_hWnd, WM_CLOSE,0,0);	// 關閉遊戲
 	}
 	else if (nChar == KEY_ESC)								// Demo 關閉遊戲的方法
 		PostMessage(AfxGetMainWnd()->m_hWnd, WM_CLOSE,0,0);	// 關閉遊戲
@@ -64,6 +66,10 @@ void CGameStateInit::OnLButtonDown(UINT nFlags, CPoint point)
 
 void CGameStateInit::OnShow()
 {
-	select_map.ShowBitmap();
-	logo.ShowBitmap();
+	//select_map.ShowBitmap();
+	//logo.ShowBitmap();
+	if (select_mode == 1)
+		logo.ShowBitmap();			//貼上背景圖
+	else
+		select_map.ShowBitmap();			//貼上背景圖
 }
