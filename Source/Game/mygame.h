@@ -63,14 +63,14 @@ namespace game_framework {
 	class CGameStateInit : public CGameState {
 	public:
 		CGameStateInit(CGame *g);
-		void OnInit();  								// �C������Ȥιϧγ]�w
+		void OnInit();  								// �C������?�ιϧγ]�w
 		void OnBeginState();							// �]�w�C�������һݪ��ܼ�
 		void OnKeyUp(UINT, UINT, UINT); 				// �B�z��LUp���ʧ@
 		void OnLButtonDown(UINT nFlags, CPoint point);  // �B�z�ƹ����ʧ@
 	protected:
 		void OnShow();									// ��ܳo�Ӫ��A���C���e��
 	private:
-		CMovingBitmap logo;								// csie��logo
+		CMovingBitmap logo,select_map;								// csie��logo
 	};
 
 	/////////////////////////////////////////////////////////////////////////////
@@ -83,7 +83,7 @@ namespace game_framework {
 		CGameStateRun(CGame *g);
 		~CGameStateRun();
 		void OnBeginState();							// �]�w�C�������һݪ��ܼ�
-		void OnInit();  								// �C������Ȥιϧγ]�w
+		void OnInit();  								// �C������?�ιϧγ]�w
 		void OnKeyDown(UINT, UINT, UINT);
 		void OnKeyUp(UINT, UINT, UINT);
 		void OnLButtonDown(UINT nFlags, CPoint point);  // �B�z�ƹ����ʧ@
