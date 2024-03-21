@@ -72,9 +72,5 @@ void CGameStateRun::OnRButtonUp(UINT nFlags, CPoint point)	// ï¿½Bï¿½zï¿½Æ¹ï¿½ï¿
 
 void CGameStateRun::OnShow()
 {
-    //background2.ShowBitmap();
-    /*if (map_mode == 1)
-		background1.ShowBitmap();			
-	else
-		background2.ShowBitmap();*/	
+    background2.ShowBitmap();
 }
