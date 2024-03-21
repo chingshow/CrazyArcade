@@ -33,6 +33,10 @@ void CGameStateRun::OnMove()							// ���ʹC������
 void CGameStateRun::OnInit()  								// �C������Ȥιϧγ]�w
 {
     background1.LoadBitmap("Resources/map1/bmp/map1.bmp", RGB(255, 255, 255));
+    background2.LoadBitmap("Resources/map2/bmp/map2.bmp", RGB(255, 255, 255));
+    background3.LoadBitmap("Resources/map3/bmp/map3.bmp", RGB(255, 255, 255));
+    background4.LoadBitmap("Resources/map4/bmp/map4.bmp", RGB(255, 255, 255));
+    background5.LoadBitmap("Resources/map5/bmp/map5.bmp", RGB(255, 255, 255));
 	
 }
 
@@ -68,5 +72,5 @@ void CGameStateRun::OnRButtonUp(UINT nFlags, CPoint point)	// �B�z�ƹ��
 
 void CGameStateRun::OnShow()
 {
-    background1.ShowBitmap();
+    background2.ShowBitmap();
 }
