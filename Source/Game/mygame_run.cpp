@@ -32,7 +32,7 @@ void CGameStateRun::OnMove()							// ���ʹC������
 
 void CGameStateRun::OnInit()  								// �C������Ȥιϧγ]�w
 {
-    background1.LoadBitmap("Resources/pages/home_page.bmp", RGB(255, 255, 255));
+    background1.LoadBitmap("Resources/map1/bmp/map1.bmp", RGB(255, 255, 255));
 	
 }
 
