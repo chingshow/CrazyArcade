@@ -96,7 +96,7 @@ namespace game_framework {
 		void OnMove();									// ���ʹC������
 		void OnShow();									// ��ܳo�Ӫ��A���C���e��
 	private:
-		CMovingBitmap background1;
+		CMovingBitmap background1,background2,background3,background4,background5;
 
 	};
 
