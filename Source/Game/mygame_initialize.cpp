@@ -10,7 +10,7 @@
 
 using namespace game_framework;
 /////////////////////////////////////////////////////////////////////////////
-// ³o­Óclass¬°¹CÀ¸ªº¹CÀ¸¶}ÀYµe­±ª«¥ó
+// ï¿½oï¿½ï¿½classï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½}ï¿½Yï¿½eï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 /////////////////////////////////////////////////////////////////////////////
 
 CGameStateInit::CGameStateInit(CGame *g) : CGameState(g)
@@ -20,12 +20,12 @@ CGameStateInit::CGameStateInit(CGame *g) : CGameState(g)
 void CGameStateInit::OnInit()
 {
 	//
-	// ·í¹Ï«Ü¦h®É¡AOnInit¸ü¤J©Ò¦³ªº¹Ï­nªá«Ü¦h®É¶¡¡C¬°Á×§Kª±¹CÀ¸ªº¤H
-	//     µ¥ªº¤£­@·Ð¡A¹CÀ¸·|¥X²{¡uLoading ...¡v¡AÅã¥ÜLoadingªº¶i«×¡C
+	// ï¿½ï¿½ï¿½Ï«Ü¦hï¿½É¡AOnInitï¿½ï¿½ï¿½Jï¿½Ò¦ï¿½ï¿½ï¿½ï¿½Ï­nï¿½ï¿½Ü¦hï¿½É¶ï¿½ï¿½Cï¿½ï¿½ï¿½×§Kï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½H
+	//     ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½@ï¿½Ð¡Aï¿½Cï¿½ï¿½ï¿½|ï¿½Xï¿½{ï¿½uLoading ...ï¿½vï¿½Aï¿½ï¿½ï¿½Loadingï¿½ï¿½ï¿½iï¿½×¡C
 	//
-	ShowInitProgress(0, "Start Initialize...");	// ¤@¶}©lªºloading¶i«×¬°0%
+	ShowInitProgress(0, "Start Initialize...");	// ï¿½@ï¿½}ï¿½lï¿½ï¿½loadingï¿½iï¿½×¬ï¿½0%
 	//
-	// ¶}©l¸ü¤J¸ê®Æ
+	// ï¿½}ï¿½lï¿½ï¿½ï¿½Jï¿½ï¿½ï¿½
 	select_mode = 1;
 	logo.LoadBitmap("Resources/pages/home_page.bmp", RGB(255, 255, 255));
 	//logo.SetTopLeft((SIZE_X - logo.GetWidth())/2, (SIZE_Y- logo.GetTop())/2);
@@ -34,9 +34,9 @@ void CGameStateInit::OnInit()
 	//select_map.SetTopLeft((SIZE_X - select_map.GetWidth())/2, (SIZE_Y- select_map.GetTop())/2);
 	select_map.SetTopLeft((SIZE_X - select_map.GetWidth())/2, SIZE_Y/8);
 	//
-	//Sleep(1000);				// ©ñºC¡A¥H«K¬Ý²M·¡¶i«×¡A¹ê»Ú¹CÀ¸½Ð§R°£¦¹Sleep
+	//Sleep(1000);				// ï¿½ï¿½Cï¿½Aï¿½Hï¿½Kï¿½Ý²Mï¿½ï¿½ï¿½iï¿½×¡Aï¿½ï¿½Ú¹Cï¿½ï¿½ï¿½Ð§Rï¿½ï¿½ï¿½ï¿½Sleep
 	//
-	// ¦¹OnInit°Ê§@·|±µ¨ìCGameStaterRun::OnInit()¡A©Ò¥H¶i«×ÁÙ¨S¨ì100%
+	// ï¿½ï¿½OnInitï¿½Ê§@ï¿½|ï¿½ï¿½ï¿½ï¿½CGameStaterRun::OnInit()ï¿½Aï¿½Ò¥Hï¿½iï¿½ï¿½ï¿½Ù¨Sï¿½ï¿½100%
 	//
 
 
@@ -72,57 +72,58 @@ void CGameStateInit::OnKeyUp(UINT nChar, UINT nRepCnt, UINT nFlags)
 {
 	const char KEY_ENTER = 0x0D;
 	const char KEY_ESC = 0x1B;
-	const char KEY_S = 0x53;//SÁä
-	const char KEY_D = 0x44;//DÁä
-	const char KEY_F = 0x46;//FÁä
-	const char KEY_G = 0x47;//GÁä
-	const char KEY_H = 0x48;//HÁä
-	const char KEY_J = 0x4A;//JÁä
+	const char KEY_S = 0x53;//Sï¿½ï¿½
+	const char KEY_D = 0x44;//Dï¿½ï¿½
+	const char KEY_F = 0x46;//Fï¿½ï¿½
+	const char KEY_G = 0x47;//Gï¿½ï¿½
+	const char KEY_H = 0x48;//Hï¿½ï¿½
+	const char KEY_J = 0x4A;//Jï¿½ï¿½
 	if (nChar == KEY_ENTER)
 	{
 		select_mode = 2;
 		
-		//PostMessage(AfxGetMainWnd()->m_hWnd, WM_CLOSE,0,0);	// Ãö³¬¹CÀ¸
+		//PostMessage(AfxGetMainWnd()->m_hWnd, WM_CLOSE,0,0);	// ï¿½ï¿½ï¿½ï¿½ï¿½Cï¿½ï¿½
 	}
-	else if (nChar == KEY_ESC)								// Demo Ãö³¬¹CÀ¸ªº¤èªk
-		PostMessage(AfxGetMainWnd()->m_hWnd, WM_CLOSE,0,0);	// Ãö³¬¹CÀ¸
-	
+	else if (nChar == KEY_ESC)								// Demo ï¿½ï¿½ï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½ï¿½k
+	{	
+		PostMessage(AfxGetMainWnd()->m_hWnd, WM_CLOSE,0,0);	// ï¿½ï¿½ï¿½ï¿½ï¿½Cï¿½ï¿½
+	}
 	else if (nChar == KEY_S)
 	{
-		map_mode = 1;	//«öSpace¶i¤J¦a¹Ï1
-		GotoGameState(GAME_STATE_RUN);						// ¤Á´«¦ÜGAME_STATE_RUN
+		map_mode = 1;	//ï¿½ï¿½Spaceï¿½iï¿½Jï¿½aï¿½ï¿½1
+		GotoGameState(GAME_STATE_RUN);						// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½GAME_STATE_RUN
 	}
 	else if (nChar == KEY_D)
 	{
-		map_mode = 2;	//«öEnter¶i¤J¦a¹Ï2
-		GotoGameState(GAME_STATE_RUN);						// ¤Á´«¦ÜGAME_STATE_RUN
+		map_mode = 2;	//ï¿½ï¿½Enterï¿½iï¿½Jï¿½aï¿½ï¿½2
+		GotoGameState(GAME_STATE_RUN);						// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½GAME_STATE_RUN
 	}
 	else if (nChar == KEY_F)
 	{
-		map_mode = 3;	//«öEnter¶i¤J¦a¹Ï3
-		GotoGameState(GAME_STATE_RUN);						// ¤Á´«¦ÜGAME_STATE_RUN
+		map_mode = 3;	//ï¿½ï¿½Enterï¿½iï¿½Jï¿½aï¿½ï¿½3
+		GotoGameState(GAME_STATE_RUN);						// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½GAME_STATE_RUN
 	}
 	else if (nChar == KEY_G)
 	{
-		map_mode = 4;	//«öEnter¶i¤J¦a¹Ï4
-		GotoGameState(GAME_STATE_RUN);						// ¤Á´«¦ÜGAME_STATE_RUN
+		map_mode = 4;	//ï¿½ï¿½Enterï¿½iï¿½Jï¿½aï¿½ï¿½4
+		GotoGameState(GAME_STATE_RUN);						// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½GAME_STATE_RUN
 	}
 	else if (nChar == KEY_H)
 	{
-		map_mode = 5;	//«öEnter¶i¤J¦a¹Ï5
-		GotoGameState(GAME_STATE_RUN);						// ¤Á´«¦ÜGAME_STATE_RUN
+		map_mode = 5;	//ï¿½ï¿½Enterï¿½iï¿½Jï¿½aï¿½ï¿½5
+		GotoGameState(GAME_STATE_RUN);						// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½GAME_STATE_RUN
 	}
 	else if (nChar == KEY_J)
 	{	
 		select_mode = 1;
-		GotoGameState(GAME_STATE_INIT);						// ¤Á´«¦ÜGAME_STATE_INIT
+		GotoGameState(GAME_STATE_INIT);						// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½GAME_STATE_INIT
 	}
 
 }
 
 /*void CGameStateInit::OnLButtonDown(UINT nFlags, CPoint point)
 {
-	GotoGameState(GAME_STATE_RUN);		// ¤Á´«¦ÜGAME_STATE_RUN
+	GotoGameState(GAME_STATE_RUN);		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½GAME_STATE_RUN
 }*/
 
 void CGameStateInit::OnShow()
@@ -130,14 +131,14 @@ void CGameStateInit::OnShow()
 	//select_map.ShowBitmap();
 	//logo.ShowBitmap();
 	if (select_mode == 1)
-		logo.ShowBitmap();			//¶K¤W­I´º¹Ï
+		logo.ShowBitmap();			//ï¿½Kï¿½Wï¿½Iï¿½ï¿½ï¿½ï¿½
 	else
-		select_map.ShowBitmap();			//¶K¤W­I´º¹Ï
+		select_map.ShowBitmap();			//ï¿½Kï¿½Wï¿½Iï¿½ï¿½ï¿½ï¿½
 /*
 	if (map_mode == 1)
-		test1.ShowBitmap();			//¶K¤W­I´º¹Ï
+		test1.ShowBitmap();			//ï¿½Kï¿½Wï¿½Iï¿½ï¿½ï¿½ï¿½
 	else if (map_mode == 2)	
-		test2.ShowBitmap();			//¶K¤W­I´º¹Ï
+		test2.ShowBitmap();			//ï¿½Kï¿½Wï¿½Iï¿½ï¿½ï¿½ï¿½
 	else if (map_mode == 3)	
 		test3.ShowBitmap();	
 	else if (map_mode == 4)	

@@ -95,6 +95,9 @@ namespace game_framework {
 	protected:
 		void OnMove();									// ï¿½ï¿½ï¿½Ê¹Cï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		void OnShow();									// ï¿½ï¿½Ü³oï¿½Óªï¿½ï¿½Aï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½eï¿½ï¿½
+	private:
+		CMovingBitmap	background1, background2, background3, background4, background5;	// ­I´º¹Ï
+
 	};
 
 	/////////////////////////////////////////////////////////////////////////////

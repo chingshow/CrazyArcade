@@ -32,7 +32,16 @@ void CGameStateRun::OnMove()							// ���ʹC������
 
 void CGameStateRun::OnInit()  								// �C������Ȥιϧγ]�w
 {
-	
+    background1.LoadBitmap("Resources/map1/bmp/map1.bmp");		// 載入地圖1的背景圖形
+	background2.LoadBitmap("Resources/map2/bmp/map2.bmp");		// 載入地圖2的背景圖形
+    background3.LoadBitmap("Resources/map3/bmp/map3.bmp");		// 載入地圖3的背景圖形
+    background4.LoadBitmap("Resources/map4/bmp/map4.bmp");		// 載入地圖4的背景圖形
+    background5.LoadBitmap("Resources/map5/bmp/map5.bmp");		// 載入地圖5的背景圖形
+	background1.SetTopLeft(0, 0);
+    background2.SetTopLeft(0, 0);
+    background3.SetTopLeft(0, 0);
+    background4.SetTopLeft(0, 0);
+    background5.SetTopLeft(0, 0);
 }
 
 void CGameStateRun::OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFlags)
@@ -67,4 +76,22 @@ void CGameStateRun::OnRButtonUp(UINT nFlags, CPoint point)	// �B�z�ƹ��
 
 void CGameStateRun::OnShow()
 {
+    if (map_mode == 1)
+		background1.ShowBitmap();			//貼上背景圖
+    else if (map_mode == 2)
+	{
+		background2.ShowBitmap();						// 貼上背景圖
+	}
+	else if (map_mode == 3)
+	{
+		background3.ShowBitmap();					//貼上背景圖
+	}
+     else if (map_mode == 4)
+	{
+		background4.ShowBitmap();						//貼上背景圖
+	}
+     else if (map_mode == 5)
+	{
+		background5.ShowBitmap();						//貼上背景圖
+	}
 }
