@@ -68,4 +68,5 @@ void CGameStateRun::OnRButtonUp(UINT nFlags, CPoint point)	// ï¿½Bï¿½zï¿½Æ¹ï¿½ï¿
 
 void CGameStateRun::OnShow()
 {
+    background1.ShowBitmap();
 }
