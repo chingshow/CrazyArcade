@@ -43,12 +43,16 @@ void CGameStateInit::OnBeginState()
 void CGameStateInit::OnKeyUp(UINT nChar, UINT nRepCnt, UINT nFlags)
 {
 	const char KEY_ENTER = 0x0D;
+	const char KEY_ESC = 0x1B;
 	if (nChar == KEY_ENTER)
 	{
 		GotoGameState(GAME_STATE_RUN);	
 		//PostMessage(AfxGetMainWnd()->m_hWnd, WM_CLOSE,0,0);	// Ãö³¬¹CÀ¸
 	}
-	
+	else if (nChar == KEY_ESC)
+	{
+		PostMessage(AfxGetMainWnd()->m_hWnd, WM_CLOSE,0,0);
+	}
 }
 
 void CGameStateInit::OnLButtonDown(UINT nFlags, CPoint point)

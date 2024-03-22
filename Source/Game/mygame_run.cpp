@@ -98,7 +98,11 @@ void CGameStateRun::OnKeyUp(UINT nChar, UINT nRepCnt, UINT nFlags)
 	{
 		gamemap.setMode(5);
 		gamemap.select_map();
-		background.SetFrameIndexOfBitmap(5);
+		background.SetFrameIndexOfBitmap(4);
+	}
+	if (nChar == KEY_ESC)
+	{
+		PostMessage(AfxGetMainWnd()->m_hWnd, WM_CLOSE,0,0);
 	}
 	
 }
