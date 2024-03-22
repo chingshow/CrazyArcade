@@ -35,6 +35,8 @@ void CGameStateOver::OnInit()
 	ShowInitProgress(66, "Initialize...");	// 接個前一個狀態的進度，此處進度視為66%
 	//
 	// 開始載入資料
+	/*ending.LoadBitmapByString({"/Resources/pages/game_end1.bmp",
+		"/Resources/pages/game_end2.bmp"});*/
 	//
 	Sleep(1000);				// 放慢，以便看清楚進度，實際遊戲請刪除此Sleep
 	//
@@ -47,5 +49,5 @@ void CGameStateOver::OnInit()
 
 void CGameStateOver::OnShow()
 {
-
+	ending.SetFrameIndexOfBitmap(0);
 }
