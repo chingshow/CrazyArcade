@@ -53,7 +53,7 @@ namespace game_framework {
 		AUDIO_DIE,				// 5
 		AUDIO_OVER				// 6
 	};
-	//static int map_mode;
+	static int map_mode;
 	static int select_mode;
 	/////////////////////////////////////////////////////////////////////////////
 	// �o��class���C�����C���}�Y�e������
