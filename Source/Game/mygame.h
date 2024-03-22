@@ -70,7 +70,7 @@ namespace game_framework {
 	protected:
 		void OnShow();									// ��ܳo�Ӫ��A���C���e��
 	private:
-		CMovingBitmap logo;								// csie��logo
+		CMovingBitmap logo,select_map;								// csie��logo
 		CMovingBitmap test1,test2,test3,test4,test5,test6,test7;	
 	};
 
@@ -96,7 +96,7 @@ namespace game_framework {
 		void OnMove();									// ���ʹC������
 		void OnShow();									// ��ܳo�Ӫ��A���C���e��
 	private:
-		CMovingBitmap select_map,background1,background2,background3,background4,background5;
+		CMovingBitmap background1,background2,background3,background4,background5;
 
 	};
 

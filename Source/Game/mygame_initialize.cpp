@@ -26,13 +26,13 @@ void CGameStateInit::OnInit()
 	ShowInitProgress(0, "Start Initialize...");	// 一開始的loading進度為0%
 	//
 	// 開始載入資料
-	//select_mode = 1;
+	select_mode = 1;
 	logo.LoadBitmap("Resources/pages/home_page.bmp", RGB(255, 255, 255));
 	//logo.SetTopLeft((SIZE_X - logo.GetWidth())/2, (SIZE_Y- logo.GetTop())/2);
 	logo.SetTopLeft((SIZE_X - logo.GetWidth())/2, SIZE_Y/8);
-	//select_map.LoadBitmap("Resources/pages/map_select.bmp", RGB(255, 255, 255));
+	select_map.LoadBitmap("Resources/pages/map_select.bmp", RGB(255, 255, 255));
 	//select_map.SetTopLeft((SIZE_X - select_map.GetWidth())/2, (SIZE_Y- select_map.GetTop())/2);
-	//select_map.SetTopLeft((SIZE_X - select_map.GetWidth())/2, SIZE_Y/8);
+	select_map.SetTopLeft((SIZE_X - select_map.GetWidth())/2, SIZE_Y/8);
 	//
 	//Sleep(1000);				// 放慢，以便看清楚進度，實際遊戲請刪除此Sleep
 	//
@@ -72,13 +72,20 @@ void CGameStateInit::OnKeyUp(UINT nChar, UINT nRepCnt, UINT nFlags)
 {
 	const char KEY_ENTER = 0x0D;
 	const char KEY_ESC = 0x1B;
-	//const char KEY_S = 0x53;//S鍵
-	//const char KEY_D = 0x44;//D鍵
-	//const char KEY_F = 0x46;//F鍵
-	//const char KEY_G = 0x47;//G鍵
-	//const char KEY_H = 0x48;//H鍵
-	//const char KEY_J = 0x4A;//J鍵
-	/*
+	const char KEY_S = 0x53;//S鍵
+	const char KEY_D = 0x44;//D鍵
+	const char KEY_F = 0x46;//F鍵
+	const char KEY_G = 0x47;//G鍵
+	const char KEY_H = 0x48;//H鍵
+	const char KEY_J = 0x4A;//J鍵
+	if (nChar == KEY_ENTER)
+	{
+		select_mode = 2;
+		
+		//PostMessage(AfxGetMainWnd()->m_hWnd, WM_CLOSE,0,0);	// 關閉遊戲
+	}
+	else if (nChar == KEY_ESC)								// Demo 關閉遊戲的方法
+		PostMessage(AfxGetMainWnd()->m_hWnd, WM_CLOSE,0,0);	// 關閉遊戲
 	
 	else if (nChar == KEY_S)
 	{
@@ -105,22 +112,11 @@ void CGameStateInit::OnKeyUp(UINT nChar, UINT nRepCnt, UINT nFlags)
 		map_mode = 5;	//按Enter進入地圖5
 		GotoGameState(GAME_STATE_RUN);						// 切換至GAME_STATE_RUN
 	}
-	/*else if (nChar == KEY_J)
+	else if (nChar == KEY_J)
 	{	
 		select_mode = 1;
 		GotoGameState(GAME_STATE_INIT);						// 切換至GAME_STATE_INIT
-	}*/
-	if (nChar == KEY_ENTER)
-	{
-		GotoGameState(GAME_STATE_RUN);
-		
-		//PostMessage(AfxGetMainWnd()->m_hWnd, WM_CLOSE,0,0);	// 關閉遊戲
 	}
-	else if (nChar == KEY_ESC)								// Demo 關閉遊戲的方法
-		PostMessage(AfxGetMainWnd()->m_hWnd, WM_CLOSE,0,0);	// 關閉遊戲
-
-
-
 
 }
 
@@ -132,12 +128,11 @@ void CGameStateInit::OnKeyUp(UINT nChar, UINT nRepCnt, UINT nFlags)
 void CGameStateInit::OnShow()
 {
 	//select_map.ShowBitmap();
-	logo.ShowBitmap();
-	/*if (select_mode == 1)
+	//logo.ShowBitmap();
+	if (select_mode == 1)
 		logo.ShowBitmap();			//貼上背景圖
 	else
-		select_map.ShowBitmap();			//貼上背景圖*/
-
+		select_map.ShowBitmap();			//貼上背景圖
 /*
 	if (map_mode == 1)
 		test1.ShowBitmap();			//貼上背景圖
