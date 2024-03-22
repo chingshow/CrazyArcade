@@ -104,6 +104,11 @@ void CGameStateRun::OnKeyUp(UINT nChar, UINT nRepCnt, UINT nFlags)
 	{
 		PostMessage(AfxGetMainWnd()->m_hWnd, WM_CLOSE,0,0);
 	}
+	if (nChar == KEY_J)
+	{
+		select_mode = 0;
+		GotoGameState(GAME_STATE_INIT);						// ¤Á´«¦ÜGAME_STATE_INIT
+	}
 	
 }
 
