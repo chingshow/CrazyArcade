@@ -48,4 +48,7 @@ void CGameStateInit::OnLButtonDown(UINT nFlags, CPoint point)
 
 void CGameStateInit::OnShow()
 {
+	background.LoadBitmap("Resources/pages/home_page.bmp");
+	background.SetTopLeft(0, 0);
+	background.ShowBitmap();
 }

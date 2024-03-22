@@ -84,112 +84,6 @@ IDR_MAINFRAME           BITMAP                  "..\\..\\resources\\Toolbar.bmp"
 
 IDB_GAME_FRAMEWORK_LOGO BITMAP                  "..\\..\\resources\\GAME_FRAMEWORK.bmp"
 
-/////////////////////////////////////////////////////////////////////////////
-//
-// Bitmap
-//
-bomb                    BITMAP                  "..\\..\\Resources\\item\\bmp\\bomb.bmp"
-bomb2                   BITMAP                  "..\\..\\Resources\\item\\bmp\\bomb2.bmp"
-bomb3                   BITMAP                  "..\\..\\Resources\\item\\bmp\\bomb3.bmp"
-needle                  BITMAP                  "..\\..\\Resources\\item\\bmp\\needle.bmp"
-null                    BITMAP                  "..\\..\\Resources\\item\\bmp\\null.bmp"
-props_1                 BITMAP                  "..\\..\\Resources\\item\\bmp\\props_1.bmp"
-props_2                 BITMAP                  "..\\..\\Resources\\item\\bmp\\props_2.bmp"
-props_3                 BITMAP                  "..\\..\\Resources\\item\\bmp\\props_3.bmp"
-
-
-map1                    BITMAP                  "..\\..\\Resources\\map1\\bmp\\map1.bmp"
-blocks_r                BITMAP                  "..\\..\\Resources\\map1\\bmp\\blocks_r.bmp"       
-blocks_y                BITMAP                  "..\\..\\Resources\\map1\\bmp\\blocks_y.bmp"
-grass                   BITMAP                  "..\\..\\Resources\\map1\\bmp\\grass.bmp"  
-house_b                 BITMAP                  "..\\..\\Resources\\map1\\bmp\\house_b.bmp"
-house_r                 BITMAP                  "..\\..\\Resources\\map1\\bmp\\house_r.bmp"       
-house_y                 BITMAP                  "..\\..\\Resources\\map1\\bmp\\house_y.bmp"
-tree                    BITMAP                  "..\\..\\Resources\\map1\\bmp\\tree.bmp"                                
-wooden_box              BITMAP                  "..\\..\\Resources\\map1\\bmp\\wooden_box.bmp"
-
-
-map2                    BITMAP                  "..\\..\\Resources\\map2\\bmp\\map2.bmp"
-cactus                  BITMAP                  "..\\..\\Resources\\map2\\bmp\\cactus.bmp"
-earth                   BITMAP                  "..\\..\\Resources\\map2\\bmp\\earth.bmp"
-green_box               BITMAP                  "..\\..\\Resources\\map2\\bmp\\green_box.bmp"
-green_box2              BITMAP                  "..\\..\\Resources\\map2\\bmp\\green_box2.bmp"
-rock                    BITMAP                  "..\\..\\Resources\\map2\\bmp\\rock.bmp"
-tent_b                  BITMAP                  "..\\..\\Resources\\map2\\bmp\\tent_b.bmp"
-tent_r                  BITMAP                  "..\\..\\Resources\\map2\\bmp\\tent_r.bmp"
-tent_y                  BITMAP                  "..\\..\\Resources\\map2\\bmp\\tent_y.bmp"
-
-
-basket_trans            BITMAP                  "..\\..\\Resources\\map3\\bmp\\basket_trans.bmp"
-flower_trans            BITMAP                  "..\\..\\Resources\\map3\\bmp\\flower_trans.bmp"
-grassBlock_trans        BITMAP                  "..\\..\\Resources\\map3\\bmp\\grassBlock_trans.bmp"
-map3                    BITMAP                  "..\\..\\Resources\\map3\\bmp\\map3.bmp"
-pool_LB_trans           BITMAP                  "..\\..\\Resources\\map3\\bmp\\pool_LB_trans.bmp"
-pool_LU_trans           BITMAP                  "..\\..\\Resources\\map3\\bmp\\pool_LU_trans.bmp"
-pool_MB_trans           BITMAP                  "..\\..\\Resources\\map3\\bmp\\pool_MB_trans.bmp"
-pool_MU_trans           BITMAP                  "..\\..\\Resources\\map3\\bmp\\pool_MU_trans.bmp"
-pool_RB_trans           BITMAP                  "..\\..\\Resources\\map3\\bmp\\pool_RB_trans.bmp"
-pool_RU_trans           BITMAP                  "..\\..\\Resources\\map3\\bmp\\pool_RU_trans.bmp"
-tree_trans              BITMAP                  "..\\..\\Resources\\map3\\bmp\\tree_trans.bmp"
-
-
-box                     BITMAP                  "..\\..\\Resources\\map4\\bmp\\box.bmp"
-cross_trans_B           BITMAP                  "..\\..\\Resources\\map4\\bmp\\cross_trans_B.bmp"
-cross_trans_L           BITMAP                  "..\\..\\Resources\\map4\\bmp\\cross_trans_L.bmp"
-cross_trans_R           BITMAP                  "..\\..\\Resources\\map4\\bmp\\cross_trans_R.bmp"
-iron1_trans_B           BITMAP                  "..\\..\\Resources\\map4\\bmp\\iron1_trans_B.bmp"
-iron2_trans_B           BITMAP                  "..\\..\\Resources\\map4\\bmp\\iron2_trans_B.bmp"
-lamb_trans_B            BITMAP                  "..\\..\\Resources\\map4\\bmp\\lamb_trans_B.bmp"
-map4                    BITMAP                  "..\\..\\Resources\\map4\\bmp\\map4.bmp"
-rock1                   BITMAP                  "..\\..\\Resources\\map4\\bmp\\rock1.bmp"
-rock2                   BITMAP                  "..\\..\\Resources\\map4\\bmp\\rock2.bmp"
-stone                   BITMAP                  "..\\..\\Resources\\map4\\bmp\\stone.bmp"
-
-block                   BITMAP                  "..\\..\\Resources\\map5\\bmp\\block.bmp"
-block2_trans            BITMAP                  "..\\..\\Resources\\map5\\bmp\\block2_trans.bmp"
-bottle_B                BITMAP                  "..\\..\\Resources\\map5\\bmp\\bottle_B.bmp"
-bottle_d                BITMAP                  "..\\..\\Resources\\map5\\bmp\\bottle_d.bmp"
-bottle_u                BITMAP                  "..\\..\\Resources\\map5\\bmp\\bottle_u"
-box_b                   BITMAP                  "..\\..\\Resources\\map5\\bmp\\box_b.bmp"
-box_d                   BITMAP                  "..\\..\\Resources\\map5\\bmp\\box_d.bmp"
-map5                    BITMAP                  "..\\..\\Resources\\map5\\bmp\\map5.bmp"
-triangle_trans          BITMAP                  "..\\..\\Resources\\map5\\bmp\\triangle_trans.bmp"
-
-center                  BITMAP                  "..\\..\\Resources\\pages\\bmp\\center.bmp"
-IDB_continue            BITMAP                  "..\\..\\Resources\\pages\\bmp\\continue.bmp"
-corner                  BITMAP                  "..\\..\\Resources\\pages\\bmp\\corner.bmp"
-game_end1               BITMAP                  "..\\..\\Resources\\pages\\bmp\\game_end1.bmp"
-game_end2               BITMAP                  "..\\..\\Resources\\pages\\bmp\\game_end2.bmp"
-home_page               BITMAP                  "..\\..\\Resources\\pages\\bmp\\home_page.bmp"
-loading                 BITMAP                  "..\\..\\Resources\\pages\\bmp\\loading.bmp"
-map_select              BITMAP                  "..\\..\\Resources\\pages\\bmp\\map_select.bmp"
-
-explode                 BITMAP                  "..\\..\\Resources\\player\\bmp\\explode.bmp"
-Player1_die1            BITMAP                  "..\\..\\Resources\\player\\bmp\\Player1_die1.bmp"
-Player1_die2            BITMAP                  "..\\..\\Resources\\player\\bmp\\Player1_die2.bmp"                
-Player1_down            BITMAP                  "..\\..\\Resources\\player\\bmp\\Player1_down.bmp"
-Player1_left            BITMAP                  "..\\..\\Resources\\player\\bmp\\Player1_left.bmp"
-Player1_right           BITMAP                  "..\\..\\Resources\\player\\bmp\\Player1_right.bmp"  
-Player1_up              BITMAP                  "..\\..\\Resources\\player\\bmp\\Player1_up.bmp"
-Player2_die1            BITMAP                  "..\\..\\Resources\\player\\bmp\\Player2_die1.bmp"
-Player2_die2            BITMAP                  "..\\..\\Resources\\player\\bmp\\Player2_die2.bmp"  
-Player2_down            BITMAP                  "..\\..\\Resources\\player\\bmp\\Player2_down.bmp"
-Player2_left            BITMAP                  "..\\..\\Resources\\player\\bmp\\Player2_left.bmp"
-Player2_right           BITMAP                  "..\\..\\Resources\\player\\bmp\\Player2_right.bmp"
-Player2_up              BITMAP                  "..\\..\\Resources\\player\\bmp\\Player2_up.bmp"                
-water_column            BITMAP                  "..\\..\\Resources\\player\\bmp\\water_column.bmp"
-water_column2           BITMAP                  "..\\..\\Resources\\player\\bmp\\water_column2.bmp"
-water_down              BITMAP                  "..\\..\\Resources\\player\\bmp\\water_down.bmp"  
-water_down_end          BITMAP                  "..\\..\\Resources\\player\\bmp\\water_down_end.bmp"
-water_left              BITMAP                  "..\\..\\Resources\\player\\bmp\\water_left.bmp"
-water_left_end          BITMAP                  "..\\..\\Resources\\player\\bmp\\water_left_end.bmp"  
-water_right             BITMAP                  "..\\..\\Resources\\player\\bmp\\water_right.bmp"
-water_right_end         BITMAP                  "..\\..\\Resources\\player\\bmp\\water_right_end.bmp"
-water_up                BITMAP                  "..\\..\\Resources\\player\\bmp\\water_up.bmp"  
-water_up_end            BITMAP                  "..\\..\\Resources\\player\\bmp\\water_up_end.bmp"
-
-
-
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -201,12 +95,6 @@ water_up_end            BITMAP                  "..\\..\\Resources\\player\\bmp\
 IDR_MAINFRAME           ICON                    "..\\..\\resources\\game.ico"
 
 IDR_GAMETYPE            ICON                    "..\\..\\resources\\gameDoc.ico"
-
-BNB                     ICON                    "..\\..\\resources\\BNB.ico"
-icon32                  ICON                    "..\\..\\resources\\icon32.ico"
-icon256                 ICON                    "..\\..\\resources\\icon256.ico"
-
-
 
 
 /////////////////////////////////////////////////////////////////////////////
