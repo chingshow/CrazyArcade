@@ -1,10 +1,21 @@
 # CrazyArcade
 ${\color{lightblue} OOPL}$  
+
+<h1>Week06</h1>
+
+## To do list  
+- 人物顯示
+- 人物移動  
+  ### 看狀況  
+  - 放炸彈
+
 <h1>Week05</h1>
 
 ## To do list
 - 選單邏輯實作
+  > complete  
 - 地圖介面實作
+  > complete  
   
 <h1>Week04</h1>
 
