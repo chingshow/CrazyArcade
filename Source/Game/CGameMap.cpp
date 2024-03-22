@@ -3,6 +3,7 @@
 #include <mmsystem.h>
 #include <ddraw.h>
 #include "../Library/gameutil.h"
+#include "../Library/gamecore.h"
 #include "CGameMap.h"
 #include <stdlib.h>
 
@@ -13,7 +14,7 @@ namespace game_framework
     {
         for (int i = 0; i < 13; i++) {
             for (int j = 0; j < 15; j++) {
-                map[i][j] = map3_init[i][j];
+                map[i][j] = map_init[i][j];
             }
         }
     }

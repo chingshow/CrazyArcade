@@ -63,6 +63,7 @@ namespace game_framework {
 		void OnBeginState();							// 設定每次重玩所需的變數
 		void OnKeyUp(UINT, UINT, UINT); 				// 處理鍵盤Up的動作
 		void OnLButtonDown(UINT nFlags, CPoint point);  // 處理滑鼠的動作
+		int select_mode;
 	protected:
 		void OnShow();									// 顯示這個狀態的遊戲畫面
 	private:
@@ -88,12 +89,14 @@ namespace game_framework {
 		void OnMouseMove(UINT nFlags, CPoint point);	// 處理滑鼠的動作 
 		void OnRButtonDown(UINT nFlags, CPoint point);  // 處理滑鼠的動作
 		void OnRButtonUp(UINT nFlags, CPoint point);	// 處理滑鼠的動作
+		int select_mode;
 	protected:
 		void OnMove();									// 移動遊戲元素
 		void OnShow();									// 顯示這個狀態的遊戲畫面
 	private:
-		CMovingBitmap background;
+		CMovingBitmap select_map, background;
 		CGameMap gamemap;
+		
 	};
 
 	/////////////////////////////////////////////////////////////////////////////

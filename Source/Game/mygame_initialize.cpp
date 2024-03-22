@@ -6,6 +6,7 @@
 #include "../Library/gameutil.h"
 #include "../Library/gamecore.h"
 #include "mygame.h"
+#include "config.h"
 
 using namespace game_framework;
 /////////////////////////////////////////////////////////////////////////////
@@ -25,6 +26,9 @@ void CGameStateInit::OnInit()
 	ShowInitProgress(0, "Start Initialize...");	// 一開始的loading進度為0%
 	//
 	// 開始載入資料
+	select_mode = 1;
+	logo.LoadBitmap("Resources/pages/home_page.bmp", RGB(255, 255, 255));
+	logo.SetTopLeft((SIZE_X - logo.GetWidth())/2, SIZE_Y/8);
 	//
 	Sleep(1000);				// 放慢，以便看清楚進度，實際遊戲請刪除此Sleep
 	//
@@ -38,7 +42,13 @@ void CGameStateInit::OnBeginState()
 
 void CGameStateInit::OnKeyUp(UINT nChar, UINT nRepCnt, UINT nFlags)
 {
-
+	const char KEY_ENTER = 0x0D;
+	if (nChar == KEY_ENTER)
+	{
+		GotoGameState(GAME_STATE_RUN);	
+		//PostMessage(AfxGetMainWnd()->m_hWnd, WM_CLOSE,0,0);	// 關閉遊戲
+	}
+	
 }
 
 void CGameStateInit::OnLButtonDown(UINT nFlags, CPoint point)
@@ -48,7 +58,5 @@ void CGameStateInit::OnLButtonDown(UINT nFlags, CPoint point)
 
 void CGameStateInit::OnShow()
 {
-	background.LoadBitmap("Resources/pages/home_page.bmp");
-	background.SetTopLeft(0, 0);
-	background.ShowBitmap();
+	logo.ShowBitmap();
 }
