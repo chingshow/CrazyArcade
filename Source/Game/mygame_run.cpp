@@ -66,6 +66,7 @@ void CGameStateRun::OnKeyUp(UINT nChar, UINT nRepCnt, UINT nFlags)
 	const char KEY_G = 0x47;//G��
 	const char KEY_H = 0x48;//H��
 	const char KEY_J = 0x4A;//J��
+	const char KEY_K = 0x4B;//k
 	if(select_mode == 0)
 		if(nChar == KEY_S || nChar == KEY_D || nChar == KEY_F || nChar == KEY_G || nChar == KEY_H)
 		{
@@ -115,9 +116,15 @@ void CGameStateRun::OnKeyUp(UINT nChar, UINT nRepCnt, UINT nFlags)
 	{
 		PostMessage(AfxGetMainWnd()->m_hWnd, WM_CLOSE,0,0);
 	}
+	if (nChar == KEY_K)
+	{
+		select_mode = 0;
+		play_mode = 0;
+	}
 	if (nChar == KEY_J)
 	{
 		select_mode = 0;
+		play_mode = 0;
 		GotoGameState(GAME_STATE_INIT);						// ������GAME_STATE_INIT
 	}
 	
