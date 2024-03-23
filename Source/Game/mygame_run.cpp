@@ -77,30 +77,35 @@ void CGameStateRun::OnKeyUp(UINT nChar, UINT nRepCnt, UINT nFlags)
 					gamemap.setMode(1);
 					gamemap.select_map();
 					background.SetFrameIndexOfBitmap(0);
+					play_mode = 1;
 				}
 				else if (nChar == KEY_D)
 				{
 					gamemap.setMode(2);
 					gamemap.select_map();
 					background.SetFrameIndexOfBitmap(1);
+					play_mode = 1;
 				}
 				else if (nChar == KEY_F)
 				{
 					gamemap.setMode(3);
 					gamemap.select_map();
 					background.SetFrameIndexOfBitmap(2);
+					play_mode = 1;
 				}
 				else if (nChar == KEY_G)
 				{
 					gamemap.setMode(4);
 					gamemap.select_map();
 					background.SetFrameIndexOfBitmap(3);
+					play_mode = 1;
 				}
 				else if (nChar == KEY_H)
 				{
 					gamemap.setMode(5);
 					gamemap.select_map();
 					background.SetFrameIndexOfBitmap(4);
+					play_mode = 1;
 				}
 			}
 		
