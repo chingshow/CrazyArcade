@@ -66,42 +66,43 @@ void CGameStateRun::OnKeyUp(UINT nChar, UINT nRepCnt, UINT nFlags)
 	const char KEY_G = 0x47;//G��
 	const char KEY_H = 0x48;//H��
 	const char KEY_J = 0x4A;//J��
-	if(nChar == KEY_S || nChar == KEY_D || nChar == KEY_F || nChar == KEY_G || nChar == KEY_H)
-	{
-		select_mode++;
-		if(select_mode == 1)
+	if(select_mode == 0)
+		if(nChar == KEY_S || nChar == KEY_D || nChar == KEY_F || nChar == KEY_G || nChar == KEY_H)
 		{
-			if (nChar == KEY_S)
+			select_mode = 1;
+			if(select_mode == 1)
 			{
-				gamemap.setMode(1);
-				gamemap.select_map();
-				background.SetFrameIndexOfBitmap(0);
+				if (nChar == KEY_S)
+				{
+					gamemap.setMode(1);
+					gamemap.select_map();
+					background.SetFrameIndexOfBitmap(0);
+				}
+				else if (nChar == KEY_D)
+				{
+					gamemap.setMode(2);
+					gamemap.select_map();
+					background.SetFrameIndexOfBitmap(1);
+				}
+				else if (nChar == KEY_F)
+				{
+					gamemap.setMode(3);
+					gamemap.select_map();
+					background.SetFrameIndexOfBitmap(2);
+				}
+				else if (nChar == KEY_G)
+				{
+					gamemap.setMode(4);
+					gamemap.select_map();
+					background.SetFrameIndexOfBitmap(3);
+				}
+				else if (nChar == KEY_H)
+				{
+					gamemap.setMode(5);
+					gamemap.select_map();
+					background.SetFrameIndexOfBitmap(4);
+				}
 			}
-			else if (nChar == KEY_D)
-			{
-				gamemap.setMode(2);
-				gamemap.select_map();
-				background.SetFrameIndexOfBitmap(1);
-			}
-			else if (nChar == KEY_F)
-			{
-				gamemap.setMode(3);
-				gamemap.select_map();
-				background.SetFrameIndexOfBitmap(2);
-			}
-			else if (nChar == KEY_G)
-			{
-				gamemap.setMode(4);
-				gamemap.select_map();
-				background.SetFrameIndexOfBitmap(3);
-			}
-			else if (nChar == KEY_H)
-			{
-				gamemap.setMode(5);
-				gamemap.select_map();
-				background.SetFrameIndexOfBitmap(4);
-			}
-		}
 		
 	}
 	
