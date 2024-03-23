@@ -49,7 +49,8 @@ void CGameStateRun::OnInit()  								// �C������Ȥιϧγ]�w
 			"resources/map5/bmp/map5.bmp"
 		});
 	background.SetTopLeft(0, 0);
-	
+	test_player.LoadBitmap("Resources/player/bmp/Player1_right.bmp", RGB(255, 255, 255));
+	test_player.SetTopLeft(0, 0);
 	gamemap.LoadBitmap();
 	
 }
