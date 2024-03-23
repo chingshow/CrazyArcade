@@ -10,7 +10,7 @@
 
 using namespace game_framework;
 /////////////////////////////////////////////////////////////////////////////
-// ³o­Óclass¬°¹CÀ¸ªº¹CÀ¸¶}ÀYµe­±ª«¥ó
+// ï¿½oï¿½ï¿½classï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½}ï¿½Yï¿½eï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 /////////////////////////////////////////////////////////////////////////////
 
 CGameStateInit::CGameStateInit(CGame *g) : CGameState(g)
@@ -20,19 +20,19 @@ CGameStateInit::CGameStateInit(CGame *g) : CGameState(g)
 void CGameStateInit::OnInit()
 {
 	//
-	// ·í¹Ï«Ü¦h®É¡AOnInit¸ü¤J©Ò¦³ªº¹Ï­nªá«Ü¦h®É¶¡¡C¬°Á×§Kª±¹CÀ¸ªº¤H
-	//     µ¥ªº¤£­@·Ð¡A¹CÀ¸·|¥X²{¡uLoading ...¡v¡AÅã¥ÜLoadingªº¶i«×¡C
+	// ï¿½ï¿½ï¿½Ï«Ü¦hï¿½É¡AOnInitï¿½ï¿½ï¿½Jï¿½Ò¦ï¿½ï¿½ï¿½ï¿½Ï­nï¿½ï¿½Ü¦hï¿½É¶ï¿½ï¿½Cï¿½ï¿½ï¿½×§Kï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½H
+	//     ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½@ï¿½Ð¡Aï¿½Cï¿½ï¿½ï¿½|ï¿½Xï¿½{ï¿½uLoading ...ï¿½vï¿½Aï¿½ï¿½ï¿½Loadingï¿½ï¿½ï¿½iï¿½×¡C
 	//
-	ShowInitProgress(0, "Start Initialize...");	// ¤@¶}©lªºloading¶i«×¬°0%
+	ShowInitProgress(0, "Start Initialize...");	// ï¿½@ï¿½}ï¿½lï¿½ï¿½loadingï¿½iï¿½×¬ï¿½0%
 	//
-	// ¶}©l¸ü¤J¸ê®Æ
+	// ï¿½}ï¿½lï¿½ï¿½ï¿½Jï¿½ï¿½ï¿?
 	//select_mode = 1;
 	logo.LoadBitmap("Resources/pages/home_page.bmp", RGB(255, 255, 255));
 	logo.SetTopLeft((SIZE_X - logo.GetWidth())/2, SIZE_Y/8);
 	//
-	Sleep(1000);				// ©ñºC¡A¥H«K¬Ý²M·¡¶i«×¡A¹ê»Ú¹CÀ¸½Ð§R°£¦¹Sleep
+	//Sleep(1000);
 	//
-	// ¦¹OnInit°Ê§@·|±µ¨ìCGameStaterRun::OnInit()¡A©Ò¥H¶i«×ÁÙ¨S¨ì100%
+	// ï¿½ï¿½OnInitï¿½Ê§@ï¿½|ï¿½ï¿½ï¿½ï¿½CGameStaterRun::OnInit()ï¿½Aï¿½Ò¥Hï¿½iï¿½ï¿½ï¿½Ù¨Sï¿½ï¿½100%
 	//
 }
 
@@ -47,7 +47,7 @@ void CGameStateInit::OnKeyUp(UINT nChar, UINT nRepCnt, UINT nFlags)
 	if (nChar == KEY_ENTER)
 	{
 		GotoGameState(GAME_STATE_RUN);	
-		//PostMessage(AfxGetMainWnd()->m_hWnd, WM_CLOSE,0,0);	// Ãö³¬¹CÀ¸
+		//PostMessage(AfxGetMainWnd()->m_hWnd, WM_CLOSE,0,0);	// ï¿½ï¿½ï¿½ï¿½ï¿½Cï¿½ï¿½
 	}
 	else if (nChar == KEY_ESC)
 	{
