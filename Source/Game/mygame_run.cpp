@@ -165,5 +165,8 @@ void CGameStateRun::OnShow()
 		background.ShowBitmap();
 		gamemap.OnShow();
 	}
-	
+	if (play_mode == 1)
+	{
+		test_player.ShowBitmap();
+	}
 }
