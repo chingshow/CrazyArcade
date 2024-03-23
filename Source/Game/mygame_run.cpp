@@ -40,6 +40,7 @@ void CGameStateRun::OnInit()  								// �C������Ȥιϧγ]�w
 	//select_map.SetTopLeft((SIZE_X - select_map.GetWidth())/2, (SIZE_Y- select_map.GetTop())/2);
 	select_map.SetTopLeft((SIZE_X - select_map.GetWidth())/2, SIZE_Y/8);
 	select_mode = 0;
+	play_mode = 0;
 	
 	background.LoadBitmapByString({"resources/map1/bmp/map1.bmp",
 			"resources/map2/bmp/map2.bmp",
@@ -48,6 +49,7 @@ void CGameStateRun::OnInit()  								// �C������Ȥιϧγ]�w
 			"resources/map5/bmp/map5.bmp"
 		});
 	background.SetTopLeft(0, 0);
+	
 	gamemap.LoadBitmap();
 	
 }

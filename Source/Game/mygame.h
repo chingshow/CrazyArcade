@@ -96,6 +96,7 @@ namespace game_framework {
 		void OnShow();									// ��ܳo�Ӫ��A���C���e��
 	private:
 		CMovingBitmap select_map, background;
+		CMovingBitmap test_player;
 		CGameMap gamemap;
 		
 	};
