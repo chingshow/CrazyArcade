@@ -1,6 +1,6 @@
-#include "CGameMap.h"
+//#include "CGameMap.h"
 namespace game_framework {
-	class player :public CGameMap
+	class player 
 	{
 	public:
 		player();

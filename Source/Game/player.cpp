@@ -12,7 +12,7 @@ namespace game_framework
 	{
 		
 	}
-	int Play2::GetX1()
+	int player::GetX1()
 	{
 		return x;
 	}
