@@ -5,77 +5,77 @@
 #include "../Library/audio.h"
 #include "../Library/gameutil.h"
 #include "../Library/gamecore.h"
-#include "player_one.h"
+#include "player.h"
 namespace game_framework 
 {
-    player_one::player_one()
+    player::player()
 	{
 		Initialize(0);
 	}
-    int player_one::GetX1()
+    int player::GetX1()
 	{
 		return x;
 	}
 
-	int player_one::GetY1()
+	int player::GetY1()
 	{
 		return x;
 	}
 
-	int player_one::GetX2()
+	int player::GetX2()
 	{
 		return x + 70;
 	}
 
-	int player_one::GetY2()
+	int player::GetY2()
 	{
 		return y + 93;
 	}
-    int player_one::getStatus()
+    int player::getStatus()
 	{
 		return status;
 	}
-    int player_one::getId()
+    int player::getId()
 	{
         return user_id;
 	}
-    void player_one::setid(int id)
+    void player::setid(int id)
 	{
 		user_id = id;
 	}
-    void player_one::setP1Status(int s)
+    void player::setP1Status(int s)
 	{
 		if (user_id == 1)
 			status = s;
 	}
-	void player_one::setP2Status(int s)
+	void player::setP2Status(int s)
 	{
         if(user_id == 2)
 			status = s;
 	}
-    void player_one::SetMovingDown(bool flag)
+    void player::SetMovingDown(bool flag)
 	{
 		isMovingDown = flag;
 	}
 
-	void player_one::SetMovingLeft(bool flag)
+	void player::SetMovingLeft(bool flag)
 	{
         isMovingLeft = flag;
 	}
 
-	void player_one::SetMovingRight(bool flag)
+	void player::SetMovingRight(bool flag)
 	{
 		isMovingRight = flag;
 	}
-    void player_one::SetMovingUp(bool flag)
+    void player::SetMovingUp(bool flag)
 	{
 		isMovingUp = flag;
 	}
-    void player_one::SetSpeed(int inSpeed)
+    void player::SetSpeed(int inSpeed)
 	{
 		speed = inSpeed;
 	}
-    void player_one::SetMap(int map[13][15])
+    void player::SetMap(int map[13][15])
 	{
         for (int i = 0; i < 13; i++) {
 			for (int j = 0; j < 15; j++) {
@@ -83,11 +83,11 @@ namespace game_framework
 			}
 		}
 	}
-	void player_one::SetXY(int nx, int ny)
+	void player::SetXY(int nx, int ny)
 	{
 		x = nx; y = ny;
 	}
-	void player_one::Initialize(int who)
+	void player::Initialize(int who)
 	{
         setid(who);
 		int X_POS = 0;
@@ -108,7 +108,7 @@ namespace game_framework
 	}
 
 
-	void player_one::LoadBitmap()
+	void player::LoadBitmap()
 	{
         P1_down.LoadBitmap("Resources/player/bmp/Player1_down.bmp", RGB(255, 255, 255));
 		P1_up.LoadBitmap("Resources/player/bmp/Player1_up.bmp", RGB(255, 255, 255));
@@ -126,13 +126,13 @@ namespace game_framework
 		
 	}
 
-	void player_one::OnMove()
+	void player::OnMove()
 	{
 
 
 	}
 
-	void player_one::OnShow()
+	void player::OnShow()
 	{
         if (status == 5 && user_id == 1)
 		{

@@ -39,6 +39,7 @@
 */
 
 #include "CGameMap.h"
+#include "player.h"
 
 namespace game_framework {
 	/////////////////////////////////////////////////////////////////////////////
@@ -102,6 +103,7 @@ namespace game_framework {
 		CMovingBitmap select_map, background;
 		CMovingBitmap test_player;
 		CGameMap gamemap;
+		player player1;
 		
 	};
 
