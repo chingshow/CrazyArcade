@@ -6,135 +6,221 @@
 #include "../Library/gameutil.h"
 #include "../Library/gamecore.h"
 #include "player.h"
-namespace game_framework 
-{
-    player::player()
+namespace game_framework {
+	/////////////////////////////////////////////////////////////////////////////
+	// CEraser: Eraser class
+	/////////////////////////////////////////////////////////////////////////////
+
+	CEraser::CEraser()
 	{
-		//Initialize(0);
-	}
-    int player::GetX1()
-	{
-		//return x;
+		Initialize(0);
 	}
 
-	int player::GetY1()
+	int CEraser::GetX1()
 	{
-		//return x;
+		return x;
 	}
 
-	int player::GetX2()
+	int CEraser::GetY1()
 	{
-		//return x + 70;
+		return y;
 	}
 
-	int player::GetY2()
+	int CEraser::GetX2()
 	{
-		//return y + 93;
-	}
-    int player::getStatus()
-	{
-		//return status;
-	}
-    int player::getId()
-	{
-        //return user_id;
-	}
-    void player::setid(int id)
-	{
-		//user_id = id;
-	}
-    void player::setP1Status(int s)
-	{
-		//if (user_id == 1)
-		//	status = s;
-	}
-	void player::setP2Status(int s)
-	{
-        //if(user_id == 2)
-		//	status = s;
-	}
-    void player::SetMovingDown(bool flag)
-	{
-		//isMovingDown = flag;
+		return x + 70;
 	}
 
-	void player::SetMovingLeft(bool flag)
+	int CEraser::GetY2()
 	{
-        //isMovingLeft = flag;
+		return y + 93;
+	}
+	void CEraser::setid(int id)
+	{
+		user_id = id;
+	}
+	void CEraser::Initialize(int who)
+	{
+		setid(who);
+
+		int X_POS = 0;
+		int Y_POS = 0;
+		if (user_id == 2)
+		{
+			X_POS = 967;
+			Y_POS = 817;
+		}
+
+		isAlive = true;
+		explosionRange = 1;
+		speed = 10;
+		status = 5;
+		x = X_POS;
+		y = Y_POS;
+		isMovingLeft = isMovingRight = isMovingUp = isMovingDown = false;
+		mode = 0;
+	}
+	void CEraser::setP1Status(int s)
+	{
+		if (user_id == 1)
+		{
+			status = s;
+		}
+	}
+	void CEraser::setP2Status(int s)
+	{
+		if(user_id == 2)
+			status = s;
 	}
 
-	void player::SetMovingRight(bool flag)
+	void CEraser::LoadBitmap()
 	{
-		//isMovingRight = flag;
-	}
-    void player::SetMovingUp(bool flag)
-	{
-		//isMovingUp = flag;
-	}
-    void player::SetSpeed(int inSpeed)
-	{
-		//speed = inSpeed;
-	}
-    void player::SetMap(int map[13][15])
-	{
-        //for (int i = 0; i < 13; i++) {
-		//	for (int j = 0; j < 15; j++) {
-		//		map_user[i][j] = map[i][j];
-		//	}
-		//}
-	}
-	void player::SetXY(int nx, int ny)
-	{
-		//x = nx; y = ny;
-	}
-	void player::Initialize(int who)
-	{
-        //setid(who);
-		//int X_POS = 0;
-		//int Y_POS = 0;
-		//if (user_id == 2)
-		//{
-		//	X_POS = 967;
-		//	Y_POS = 817;
-		//}
-		//isAlive = true;
-		//explosionRange = 1;
-		//speed = 10;
-		//status = 5;
-		//x = X_POS;
-		//y = Y_POS;
-		//isMovingLeft = isMovingRight = isMovingUp = isMovingDown = false;
-		//mode = 0;
+		/*P1_down.LoadBitmap(Player1_down, RGB(255, 255, 255));
+		P1_up.LoadBitmap(Player1_up, RGB(255, 255, 255));
+		P1_left.LoadBitmap(Player1_left, RGB(255, 255, 255));
+		P1_right.LoadBitmap(Player1_right, RGB(255, 255, 255));
+		p1die1.LoadBitmap(Player1_die1, RGB(255, 255, 255));
+		p1die2.LoadBitmap(Player1_die2, RGB(255, 255, 255));
+
+		P2_down.LoadBitmap(Player2_down, RGB(255, 255, 255));
+		P2_up.LoadBitmap(Player2_up, RGB(255, 255, 255));
+		P2_left.LoadBitmap(Player2_left, RGB(255, 255, 255));
+		P2_right.LoadBitmap(Player2_right, RGB(255, 255, 255));
+		p2die1.LoadBitmap(Player2_die1, RGB(255, 255, 255));
+		p2die2.LoadBitmap(Player2_die2, RGB(255, 255, 255));*/
 	}
 
-
-	void player::LoadBitmap()
+	void CEraser::OnMove()
 	{
-        //P1_down.LoadBitmap("Resources/player/bmp/Player1_down.bmp", RGB(255, 255, 255));
-		//P1_up.LoadBitmap("Resources/player/bmp/Player1_up.bmp", RGB(255, 255, 255));
-		//P1_left.LoadBitmap("Resources/player/bmp/Player1_left.bmp", RGB(255, 255, 255));
-		//P1_right.LoadBitmap("Resources/player/bmp/Player1_right.bmp", RGB(255, 255, 255));
-		//p1die1.LoadBitmap("Resources/player/bmp/Player1_die1.bmp", RGB(255, 255, 255));
-		//p1die2.LoadBitmap("Resources/player/bmp/Player1_die2.bmp", RGB(255, 255, 255));
 
-		//P2_down.LoadBitmap("Resources/player/bmp/Player2_down.bmp", RGB(255, 255, 255));
-		//P2_up.LoadBitmap("Resources/player/bmp/Player2_up.bmp", RGB(255, 255, 255));
-		//P2_left.LoadBitmap("Resources/player/bmp/Player2_left.bmp", RGB(255, 255, 255));
-		//P2_right.LoadBitmap("Resources/player/bmp/Player2_right.bmp", RGB(255, 255, 255));
-		//p2die1.LoadBitmap("Resources/player/bmp/Player2_die1.bmp", RGB(255, 255, 255));
-		//p2die2.LoadBitmap("Resources/player/bmp/Player2_die2.bmp", RGB(255, 255, 255));
+		int x2 = GetX2();
+		int y2 = GetY2();
+
+		if (isMovingUp) {
+			if (y > 0 && (map_user[(y - speed) / 70][(x + 35) / 70] == 0 || map_user[(y - speed) / 70][(x + 35) / 70] > 20)) {
+				y -= speed;
+				mode = 0;
+			}
+			else
+			{
+				int temp = speed;
+				while (temp > 0)
+				{
+					temp--;
+					if (y > 0 && (map_user[(y - temp) / 70][(x + 35) / 70] == 0 || map_user[(y - temp) / 70][(x + 35) / 70] > 20))
+					{
+							y--;
+					}
+				}
+			}
+		}
+		else if (isMovingDown) {
+			if (y < 817 && (map_user[(y2 + speed) / 70][(x + 35) / 70] == 0 || map_user[(y2 + speed)/70][(x + 35) / 70] > 20)) {
+				y += speed;
+				mode = 1;
+			}
+			else
+			{
+				int temp = speed;
+				while (temp > 0)
+				{
+					temp--;
+					if (y  < 817 && (map_user[(y2 + temp) / 70][(x + 35) / 70] == 0 || map_user[(y2 + temp)/70][(x + 35) / 70] > 20))
+					{
+						y++;
+					}
+				}
+			}
+		}
+		else if (isMovingLeft) {
+			if (x > 0 && (map_user[(y + 35) / 70][(x - speed) / 70] == 0 || map_user[(y + 35) / 70][(x - speed) / 70] > 20)) {
+				x -= speed;
+				mode = 2;
+			}
+			else
+			{
+				int temp = speed;
+				while (temp > 0)
+				{
+					temp--;
+					if (x > 0 && (map_user[(y + 35) / 70][(x - temp) / 70] == 0 || map_user[(y + 35) / 70][(x - temp) / 70] > 20))
+					{
+						x--;
+					}
+				}
+			}
+		}
+		else if (isMovingRight) {
+			if (x < 980 && (map_user[(y + 35) / 70][(x2 + speed) / 70] == 0 || map_user[(y + 35) / 70][(x2 + speed) / 70] > 20)) {
+				x += speed;
+				mode = 3;
+			}
+			else
+			{
+				int temp = speed;
+				while (temp > 0)
+				{
+					temp--;
+					if (x < 980 && (map_user[(y + 35) / 70][(x2 + temp) / 70] == 0 || map_user[(y + 35) / 70][(x2 + temp) / 70] > 20))
+					{
+						x++;
+					}
+				}
+			}
+		}
+
 		
-	}
-
-	void player::OnMove()
-	{
-
 
 	}
 
-	void player::OnShow()
+	void CEraser::SetMovingDown(bool flag)
 	{
-        /*if (status == 5 && user_id == 1)
+		isMovingDown = flag;
+	}
+
+	void CEraser::SetMovingLeft(bool flag)
+	{
+		isMovingLeft = flag;
+
+	}
+
+	void CEraser::SetMovingRight(bool flag)
+	{
+		isMovingRight = flag;
+	}
+
+	int CEraser::getStatus()
+	{
+		return status;
+	}
+	void CEraser::SetMovingUp(bool flag)
+	{
+		isMovingUp = flag;
+	}
+
+	void CEraser::SetMap(int map[13][15])
+	{
+		for (int i = 0; i < 13; i++) {
+			for (int j = 0; j < 15; j++) {
+				map_user[i][j] = map[i][j];
+			}
+		}
+	}
+	void CEraser::SetXY(int nx, int ny)
+	{
+		x = nx; y = ny;
+	}
+	int CEraser::getId()
+	{
+		return user_id;
+	}
+	void CEraser::SetSpeed(int inSpeed)
+	{
+		speed = inSpeed;
+	}
+	void CEraser::OnShow()
+	{
+		/*if (status == 5 && user_id == 1)
 		{
 			if (mode == 0) {
 				P1_up.SetTopLeft(x, y);
@@ -153,7 +239,32 @@ namespace game_framework
 				P1_right.ShowBitmap();
 			}
 		}
-        if (status == 5 && user_id == 2)
+		else if(status != 5 && user_id == 1)
+		{
+			if (status == 4)
+			{
+				p1die1.SetTopLeft(x - 20, y - 8);
+				p1die1.ShowBitmap();
+			}
+			else if (status == 3)
+			{
+				p1die2.SetTopLeft(x - 20, y - 8);
+				p1die2.ShowBitmap();
+			}
+			else if (status == 2)
+			{
+				p1die1.SetTopLeft(x - 20, y - 8);
+				p1die1.ShowBitmap();
+			}
+			else if (status == 1)
+			{
+				p1die2.SetTopLeft(x - 20, y - 8);
+				p1die2.ShowBitmap();
+			}
+
+
+		}
+		if (status == 5 && user_id == 2)
 		{
 			if (mode == 0) {
 				P2_up.SetTopLeft(x, y);
@@ -171,10 +282,31 @@ namespace game_framework
 				P2_right.SetTopLeft(x, y);
 				P2_right.ShowBitmap();
 			}
+		}
+		else if (status != 5 && user_id == 2)
+		{
+			if (status == 4)
+			{
+				p2die1.SetTopLeft(x - 13, y - 8);
+				p2die1.ShowBitmap();
+			}
+			else if (status == 3)
+			{
+				p2die2.SetTopLeft(x - 13, y - 8);
+				p2die2.ShowBitmap();
+			}
+			else if (status == 2)
+			{
+				p2die1.SetTopLeft(x - 13, y - 8);
+				p2die1.ShowBitmap();
+			}
+			else if (status == 1)
+			{
+				p2die2.SetTopLeft(x - 13, y - 8);
+				p2die2.ShowBitmap();
+			}
+
+
 		}*/
-		
 	}
-
-
-
 }

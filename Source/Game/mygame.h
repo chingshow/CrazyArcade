@@ -39,7 +39,6 @@
 */
 
 #include "CGameMap.h"
-#include "player.h"
 
 namespace game_framework {
 	/////////////////////////////////////////////////////////////////////////////
@@ -47,13 +46,9 @@ namespace game_framework {
 	/////////////////////////////////////////////////////////////////////////////
 
 	enum AUDIO_ID {				// �w�q�U�ح��Ī��s��
-		AUDIO_START,			// 0
-		AUDIO_MUSIC,			// 1
-		AUDIO_BOBO,				// 2
-		AUDIO_BANG,				// 3
-		AUDIO_DING,				// 4
-		AUDIO_DIE,				// 5
-		AUDIO_OVER				// 6
+		AUDIO_DING,				// 0
+		AUDIO_LAKE,				// 1
+		AUDIO_NTUT				// 2
 	};
 
 	/////////////////////////////////////////////////////////////////////////////
@@ -64,7 +59,7 @@ namespace game_framework {
 	class CGameStateInit : public CGameState {
 	public:
 		CGameStateInit(CGame *g);
-		void OnInit();  								// �C������?�ιϧγ]�w
+		void OnInit();  								// �C������Ȥιϧγ]�w
 		void OnBeginState();							// �]�w�C�������һݪ��ܼ�
 		void OnKeyUp(UINT, UINT, UINT); 				// �B�z��LUp���ʧ@
 		void OnLButtonDown(UINT nFlags, CPoint point);  // �B�z�ƹ����ʧ@
@@ -86,7 +81,7 @@ namespace game_framework {
 		CGameStateRun(CGame *g);
 		~CGameStateRun();
 		void OnBeginState();							// �]�w�C�������һݪ��ܼ�
-		void OnInit();  								// �C������?�ιϧγ]�w
+		void OnInit();  								// �C������Ȥιϧγ]�w
 		void OnKeyDown(UINT, UINT, UINT);
 		void OnKeyUp(UINT, UINT, UINT);
 		/*void OnLButtonDown(UINT nFlags, CPoint point);  // �B�z�ƹ����ʧ@
@@ -103,7 +98,6 @@ namespace game_framework {
 		CMovingBitmap select_map, background;
 		CMovingBitmap test_player;
 		CGameMap gamemap;
-		player player1;
 		
 	};
 
