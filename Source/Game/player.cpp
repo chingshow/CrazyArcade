@@ -10,7 +10,11 @@ namespace game_framework
 {
     player::player()
 	{
-
+		
+	}
+	int Play2::GetX1()
+	{
+		return x;
 	}
 
 }

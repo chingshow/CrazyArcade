@@ -30,6 +30,7 @@ namespace game_framework
             for (int j = 0; j < 15; j++) {
                 switch(mode)
                 {
+                    
                 case 1:
                     map[i][j] = map1_init[i][j];
                     break;

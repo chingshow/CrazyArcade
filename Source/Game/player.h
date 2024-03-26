@@ -4,6 +4,7 @@ namespace game_framework {
 	{
 	public:
 		player();
+		int  GetX1();
 
 	protected:
 		int x, y, mode;					
