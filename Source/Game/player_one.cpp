@@ -31,9 +31,57 @@ namespace game_framework
 	{
 		return y + 93;
 	}
+    int player_one::getStatus()
+	{
+		return status;
+	}
+    int player_one::getId()
+	{
+        return user_id;
+	}
     void player_one::setid(int id)
 	{
 		user_id = id;
+	}
+    void player_one::setP1Status(int s)
+	{
+		if (user_id == 1)
+			status = s;
+	}
+	void player_one::setP2Status(int s)
+	{
+        if(user_id == 2)
+			status = s;
+	}
+    void player_one::SetMovingDown(bool flag)
+	{
+		isMovingDown = flag;
+	}
+
+	void player_one::SetMovingLeft(bool flag)
+	{
+        isMovingLeft = flag;
+	}
+
+	void player_one::SetMovingRight(bool flag)
+	{
+		isMovingRight = flag;
+	}
+    void player_one::SetMovingUp(bool flag)
+	{
+		isMovingUp = flag;
+	}
+    void player_one::SetSpeed(int inSpeed)
+	{
+		speed = inSpeed;
+	}
+    void player_one::SetMap(int map[13][15])
+	{
+
+	}
+	void player_one::SetXY(int nx, int ny)
+	{
+		
 	}
 	void player_one::Initialize(int who)
 	{
@@ -54,16 +102,7 @@ namespace game_framework
 		isMovingLeft = isMovingRight = isMovingUp = isMovingDown = false;
 		mode = 0;
 	}
-	void player_one::setP1Status(int s)
-	{
-		if (user_id == 1)
-			status = s;
-	}
-	void player_one::setP2Status(int s)
-	{
-        if(user_id == 2)
-			status = s;
-	}
+
 
 	void player_one::LoadBitmap()
 	{
@@ -88,47 +127,7 @@ namespace game_framework
 
 
 	}
-
-	void player_one::SetMovingDown(bool flag)
-	{
-		
-	}
-
-	void player_one::SetMovingLeft(bool flag)
-	{
-		
-	}
-
-	void player_one::SetMovingRight(bool flag)
-	{
-		
-	}
-
-	int player_one::getStatus()
-	{
-		
-	}
-	void player_one::SetMovingUp(bool flag)
-	{
-		
-	}
-
-	void player_one::SetMap(int map[13][15])
-	{
-
-	}
-	void player_one::SetXY(int nx, int ny)
-	{
-		
-	}
-	int player_one::getId()
-	{
-        
-	}
-	void player_one::SetSpeed(int inSpeed)
-	{
-		
-	}
+    
 	void player_one::OnShow()
 	{
 		
