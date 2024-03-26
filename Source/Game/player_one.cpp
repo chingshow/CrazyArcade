@@ -29,11 +29,11 @@ namespace game_framework
 
 	int player_one::GetY2()
 	{
-		
+		return y + 93;
 	}
     void player_one::setid(int id)
 	{
-		
+		user_id = id;
 	}
 	void player_one::Initialize(int who)
 	{
