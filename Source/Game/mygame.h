@@ -103,7 +103,7 @@ namespace game_framework {
 		CMovingBitmap select_map, background;
 		CMovingBitmap test_player;
 		CGameMap gamemap;
-		player player1;
+		//player player1;
 		
 	};
 
