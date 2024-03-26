@@ -9,7 +9,7 @@ namespace game_framework {
 		int status;					// 存角色狀態 可能被打到
 		bool isAlive;				// 還活者
 		int explosionRange;			// 爆炸範圍 初始 1 吃道具增加
-		
+
 		player_one();
 		int  GetX1();					// 擦子左上角 x 座標
 		int  GetY1();					// 擦子左上角 y 座標

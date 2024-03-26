@@ -77,11 +77,15 @@ namespace game_framework
 	}
     void player_one::SetMap(int map[13][15])
 	{
-
+        for (int i = 0; i < 13; i++) {
+			for (int j = 0; j < 15; j++) {
+				map_user[i][j] = map[i][j];
+			}
+		}
 	}
 	void player_one::SetXY(int nx, int ny)
 	{
-		
+		x = nx; y = ny;
 	}
 	void player_one::Initialize(int who)
 	{
@@ -127,7 +131,7 @@ namespace game_framework
 
 
 	}
-    
+
 	void player_one::OnShow()
 	{
 		
