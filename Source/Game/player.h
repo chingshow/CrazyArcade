@@ -3,6 +3,7 @@ namespace game_framework {
 	class player :public CGameMap
 	{
 	public:
+		player();
 		int user_id;
 		int map_user[13][15];
 		int speed;
@@ -10,7 +11,7 @@ namespace game_framework {
 		bool isAlive;
 		int explosionRange;
 
-		player();
+		
 		int  GetX1();
 		int  GetY1();
 		int  GetX2();
