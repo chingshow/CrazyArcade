@@ -31,7 +31,7 @@ void CGameStateRun::OnMove()							// ���ʹC������
 	
 }
 
-void CGameStateRun::OnInit()  								// �C������Ȥιϧγ]�w
+void CGameStateRun::OnInit()  								// �C������?�ιϧγ]�w
 {
 	//background.LoadBitmap("resources/pages/map_select.bmp");
 	//background.SetTopLeft(0, 0);

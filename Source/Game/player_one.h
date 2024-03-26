@@ -4,29 +4,29 @@ namespace game_framework {
 	{
 	public:
 		player_one();
-		int  GetX1();					// æ“¦å­å·¦ä¸Šè§’ x åº§æ¨™
-		int  GetY1();					// æ“¦å­å·¦ä¸Šè§’ y åº§æ¨™
-		int  GetX2();					// æ“¦å­å³ä¸‹è§’ x åº§æ¨™
-		int  GetY2();					// æ“¦å­å³ä¸‹è§’ y åº§æ¨™
+		int  GetX1();					// À¿¤l¥ª¤W¨¤ x ®y¼Ğ
+		int  GetY1();					// À¿¤l¥ª¤W¨¤ y ®y¼Ğ
+		int  GetX2();					// À¿¤l¥k¤U¨¤ x ®y¼Ğ
+		int  GetY2();					// À¿¤l¥k¤U¨¤ y ®y¼Ğ
 		int user_id;
-		void Initialize(int who);		// è¨­å®šç‚ºåˆå§‹å€¼
-		void LoadBitmap();				// è¼‰å…¥åœ–å½¢
-		void OnMove();					// ç§»å‹•
-		void OnShow();					// å°‡åœ–å½¢è²¼åˆ°ç•«é¢
-		void SetMovingDown(bool flag);	// è¨­å®šæ˜¯å¦æ­£åœ¨å¾€ä¸‹ç§»å‹•
-		void SetMovingLeft(bool flag);	// è¨­å®šæ˜¯å¦æ­£åœ¨å¾€å·¦ç§»å‹•
-		void SetMovingRight(bool flag); // è¨­å®šæ˜¯å¦æ­£åœ¨å¾€å³ç§»å‹•
-		void SetMovingUp(bool flag);	// è¨­å®šæ˜¯å¦æ­£åœ¨å¾€ä¸Šç§»å‹•
-		void SetXY(int nx, int ny);		// è¨­å®šå·¦ä¸Šè§’åº§æ¨™
-		void SetSpeed(int);				//è¨­å®šç§»å‹•é€Ÿåº¦
+		void Initialize(int who);				// ³]©wÀ¿¤l¬°ªì©l­È
+		void LoadBitmap();				// ¸ü¤J¹Ï§Î
+		void OnMove();					// ²¾°ÊÀ¿¤l
+		void OnShow();					// ±NÀ¿¤l¹Ï§Î¶K¨ìµe­±
+		void SetMovingDown(bool flag);	// ³]©w¬O§_¥¿¦b©¹¤U²¾°Ê
+		void SetMovingLeft(bool flag);	// ³]©w¬O§_¥¿¦b©¹¥ª²¾°Ê
+		void SetMovingRight(bool flag); // ³]©w¬O§_¥¿¦b©¹¥k²¾°Ê
+		void SetMovingUp(bool flag);	// ³]©w¬O§_¥¿¦b©¹¤W²¾°Ê
+		void SetXY(int nx, int ny);		// ³]©wÀ¿¤l¥ª¤W¨¤®y¼Ğ
+		void SetSpeed(int);				//³]©wÀ¿¤l²¾°Ê³t«×
 		int map_user[13][15];
 		void SetMap(int map[13][15]);
-		int speed;					// ç§»å‹•é€Ÿåº¦
-		int status;					// å­˜è§’è‰²ç‹€æ…‹ å¯èƒ½è¢«æ‰“åˆ°
-		bool isAlive;				// é‚„æ´»è€…
-		int explosionRange;			// çˆ†ç‚¸ç¯„åœ åˆå§‹ 1 åƒé“å…·å¢åŠ 
-		void setP1Status(int s);		// æ›´æ–°p1ç‹€æ…‹
-		void setP2Status(int s);		// æ›´æ–°p2ç‹€æ…‹
+		int speed;					// ²¾°Ê³t«×
+		int status;					// ¦s¨¤¦âª¬ºA ¥i¯à³Q¥´¨ì
+		bool isAlive;				// ÁÙ¬¡ªÌ
+		int explosionRange;			// Ãz¬µ½d³ò ªì©l 1 ¦Y¹D¨ã¼W¥[
+		void setP1Status(int s);		// §ó·sp1ª¬ºA
+		void setP2Status(int s);		// §ó·sp2ª¬ºA
 		void setid(int id);
 		int getId();
 		int getStatus();
@@ -34,11 +34,11 @@ namespace game_framework {
 	protected:
 		CMovingBitmap P1_down, P1_up, P1_left, P1_right, p1die1, p1die2;
 		CMovingBitmap P2_down, P2_up, P2_left, P2_right, p2die1, p2die2;
-		int x, y, mode;					// å·¦ä¸Šè§’åº§æ¨™
-		bool isMovingDown;			// æ˜¯å¦æ­£åœ¨å¾€ä¸‹ç§»å‹•
-		bool isMovingLeft;			// æ˜¯å¦æ­£åœ¨å¾€å·¦ç§»å‹•
-		bool isMovingRight;			// æ˜¯å¦æ­£åœ¨å¾€å³ç§»å‹•
-		bool isMovingUp;			// æ˜¯å¦æ­£åœ¨å¾€ä¸Šç§»å‹•
+		int x, y, mode;					// À¿¤l¥ª¤W¨¤®y¼Ğ
+		bool isMovingDown;			// ¬O§_¥¿¦b©¹¤U²¾°Ê
+		bool isMovingLeft;			// ¬O§_¥¿¦b©¹¥ª²¾°Ê
+		bool isMovingRight;			// ¬O§_¥¿¦b©¹¥k²¾°Ê
+		bool isMovingUp;			// ¬O§_¥¿¦b©¹¤W²¾°Ê
 
 	};
 }
