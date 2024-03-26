@@ -39,7 +39,7 @@
 */
 
 #include "CGameMap.h"
-
+#include "player.h"
 namespace game_framework {
 	/////////////////////////////////////////////////////////////////////////////
 	// Constants
@@ -59,7 +59,7 @@ namespace game_framework {
 	class CGameStateInit : public CGameState {
 	public:
 		CGameStateInit(CGame *g);
-		void OnInit();  								// �C������Ȥιϧγ]�w
+		void OnInit();  								// �C������?�ιϧγ]�w
 		void OnBeginState();							// �]�w�C�������һݪ��ܼ�
 		void OnKeyUp(UINT, UINT, UINT); 				// �B�z��LUp���ʧ@
 		void OnLButtonDown(UINT nFlags, CPoint point);  // �B�z�ƹ����ʧ@
@@ -81,7 +81,7 @@ namespace game_framework {
 		CGameStateRun(CGame *g);
 		~CGameStateRun();
 		void OnBeginState();							// �]�w�C�������һݪ��ܼ�
-		void OnInit();  								// �C������Ȥιϧγ]�w
+		void OnInit();  								// �C������?�ιϧγ]�w
 		void OnKeyDown(UINT, UINT, UINT);
 		void OnKeyUp(UINT, UINT, UINT);
 		/*void OnLButtonDown(UINT nFlags, CPoint point);  // �B�z�ƹ����ʧ@
@@ -98,6 +98,7 @@ namespace game_framework {
 		CMovingBitmap select_map, background;
 		CMovingBitmap test_player;
 		CGameMap gamemap;
+		player player1;
 		
 	};
 
