@@ -134,6 +134,44 @@ namespace game_framework
 
 	void player_one::OnShow()
 	{
+        if (status == 5 && user_id == 1)
+		{
+			if (mode == 0) {
+				P1_up.SetTopLeft(x, y);
+				P1_up.ShowBitmap();
+			}
+			if (mode == 1) {
+				P1_down.SetTopLeft(x, y);
+				P1_down.ShowBitmap();
+			}
+			if (mode == 2) {
+				P1_left.SetTopLeft(x, y);
+				P1_left.ShowBitmap();
+			}
+			if (mode == 3) {
+				P1_right.SetTopLeft(x, y);
+				P1_right.ShowBitmap();
+			}
+		}
+        if (status == 5 && user_id == 2)
+		{
+			if (mode == 0) {
+				P2_up.SetTopLeft(x, y);
+				P2_up.ShowBitmap();
+			}
+			if (mode == 1) {
+				P2_down.SetTopLeft(x, y);
+				P2_down.ShowBitmap();
+			}
+			if (mode == 2) {
+				P2_left.SetTopLeft(x, y);
+				P2_left.ShowBitmap();
+			}
+			if (mode == 3) {
+				P2_right.SetTopLeft(x, y);
+				P2_right.ShowBitmap();
+			}
+		}
 		
 	}
 
