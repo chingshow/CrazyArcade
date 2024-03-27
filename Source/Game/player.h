@@ -1,12 +1,16 @@
-//#include "CGameMap.h"
-namespace game_framework {
-	class player 
-	{
-	public:
-		player();
-		int  GetX1();
+#pragma once
 
-	protected:
-		int x, y, mode;					
-	};
+namespace game_framework
+{ 
+    class player
+    {
+    public:
+        player();
+        void LoadBitmap();
+        ~player();
+    protected:
+        int mode = 0;
+    };
+    
+    
 }

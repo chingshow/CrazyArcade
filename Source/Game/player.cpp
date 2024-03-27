@@ -1,20 +1,24 @@
-#include "stdafx.h"
-#include "../Core/Resource.h"
+#include "StdAfx.h"
+#include "resource.h"
 #include <mmsystem.h>
 #include <ddraw.h>
-#include "../Library/audio.h"
 #include "../Library/gameutil.h"
 #include "../Library/gamecore.h"
 #include "player.h"
-namespace game_framework 
+#include <stdlib.h>
+
+namespace game_framework
 {
     player::player()
-	{
-		
-	}
-	int player::GetX1()
-	{
-		return x;
-	}
+    {
+       
+    }
 
+
+    void player::LoadBitmap()
+    {
+       
+    }
+
+    player::~player(){}
 }
